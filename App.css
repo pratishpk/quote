@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,300;0,400;1,700&family=Roboto:ital@1&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100%;
+  background: url('./city.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.card {
+  background-color: whitesmoke;
+  width: 40%;
+  height: 40%;
+  max-height: 90%;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 80%;
+  flex-direction: column;
+  border-radius: 25px;
+  padding: 2%;
+  box-shadow: 5px 5px;
+
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  height: 580px;
+  max-height: 70%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.button {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 200px;
+  width: 210px;
+  opacity: 1;
+  background-color: #ffffff;
+  border: 1px solid rgba(22, 76, 167, 0.6);
+  border-width: medium;
+}
+
+
+.tweet {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  opacity: 1;
+  border: 1px solid rgba(22, 76, 167, 0.6);
+  border-width: medium;
+  max-height: 50px;
+  max-width: 50px;
+  display: flex;
+  margin-top: 6px;
+}
+
+
+
+.button span {
+  position: relative;
+  color: #164ca7;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  font-weight: bold;
+  }
+
+
+.button:hover {
+  animation: rotate 2s ease-in-out both;
+}
+
+.button:hover span {
+  animation: storm 0.5s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+@media only screen and (max-height: 600px) {
+  .card {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 80%;
+    height: 50%;
+  }
+}
