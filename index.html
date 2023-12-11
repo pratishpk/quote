@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="App.css">
     <title>Advice App</title>
 </head>
+
 <body class="">
 
-<div class="app">
-    <div class="card" id="adviceCard">
-        <h1 class="heading"></h1>
-        <button class="button" onclick="fetchAdvice()">
-            <span>New Quote</span>
-        </button>
-        <img id="tweet" src="tweet.png" class="tweet">
+    <div class="app">
+        <div class="card" id="adviceCard">
+            <h1 class="heading"></h1>
+            <button id="button" class="button" onclick="fetchAdvice()" onmousedown="buttonClick()"
+                onmouseup="buttonRelease()">
+                <span>New Quote</span>
+            </button>
+            <img id="tweet" src="tweet.png" class="tweet">
+
+        </div>
 
     </div>
-    
-</div>
 
-<script src="app.js">
+    <script src="app.js">
 
-</script>
+    </script>
 
 </body>
+
+<footer class="footer">
+    <div class="footer-text">Made with ❤ by <a href="instagram.com/mr_pratish.pk" class="footer-link">Pratish
+            Khandelwal</a></div>
+</footer>
+
 </html>
