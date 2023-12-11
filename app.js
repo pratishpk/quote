@@ -18,16 +18,19 @@ function updateAdvice(newAdvice) {
     adviceElement.textContent = newAdvice;
 }
 
+function buttonClick() {
+    const button = document.querySelector('.button');
+    button.classList.add('clicked');
+}
+
+function buttonRelease() {
+    const button = document.querySelector('.button');
+    button.classList.remove('clicked');
+}
+
 // Initial fetch on page load
 fetchAdvice();
 
 document.getElementById('tweet').addEventListener('click', function () {
     window.open("https://twitter.com/intent/tweet?text=" + state.advice, 'Tweet Window', 'height=300,width=600');
-});
-
-
-const facebook = document.getElementById('facebook');
-facebook.addEventListener('click', function(){
-    window.open("https://www.facebook.com/sharer/sharer.php?u=" + state.advice, 'Facebook Window');
-
 });
