@@ -73,8 +73,8 @@ body {
   opacity: 1;
   border: 1px solid rgba(22, 76, 167, 0.6);
   border-width: medium;
-  max-height: 50px;
-  max-width: 50px;
+  max-height: 40px;
+  max-width: 40px;
   display: flex;
   margin-top: 6px;
 }
